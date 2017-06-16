@@ -69,6 +69,11 @@ install(TARGETS hokuyo_node getID getFirmwareVersion
         DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
-install(FILES test/TODO test/unplug_test.launch COPYING.lib hokuyo_test.launch hokuyo_test.vcg hokuyo_test_intensity.launch
+install(DIRECTORY launch/
+    DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+    FILES_MATCHING PATTERN "*.launch"
+    )
+
+install(FILES test/TODO test/unplug_test.launch COPYING.lib hokuyo_test.vcg
         DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
