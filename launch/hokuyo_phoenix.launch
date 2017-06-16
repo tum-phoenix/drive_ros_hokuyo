@@ -1,0 +1,16 @@
+<launch>
+
+<node name="hokuyo" pkg="hokuyo_node" type="hokuyo_node" output="screen" >
+  <param name="calibrate_time" value="false" />
+  <param name="port" value="/dev/hokuyo_lidar" />
+  
+</node>
+
+<!-- <node name="hokuyo_3d" pkg="hokuyo3d" type="hokuyo3d" output="screen" >
+  <param name="calibrate_time" value="false" >
+  <param name="port" value="/dev/hokuyo_lidar" >
+  
+</node> -->
+
+</launch>
+
