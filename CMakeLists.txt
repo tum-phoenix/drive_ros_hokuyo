@@ -26,6 +26,7 @@ include_directories(include ${catkin_INCLUDE_DIRS})
 
 # Dynamic reconfigure support
 generate_dynamic_reconfigure_options(cfg/Hokuyo.cfg)
+add_dependencies(${PROJECT_NAME}_gencfg ${driver_base_EXPORTED_TARGETS})
 
 # Export with catkin_package
 catkin_package(
