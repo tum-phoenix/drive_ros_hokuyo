@@ -1,9 +1,10 @@
 <launch>
 
+<arg name="scan_topic" default="scan"/>
 <node name="hokuyo" pkg="hokuyo_node" type="hokuyo_node" output="screen" >
   <param name="calibrate_time" value="false" />
   <param name="port" value="/dev/hokuyo_lidar" />
-  
+  <remap from="scan" to="$(arg scan_topic)"/>
 </node>
 
 <!-- <node name="hokuyo_3d" pkg="hokuyo3d" type="hokuyo3d" output="screen" >
