@@ -4,12 +4,13 @@
 <!-- define nice value of process (lower means higher priority) [-20;19] -->
 <!-- more infos: https://en.wikipedia.org/wiki/Nice_(Unix) -->
 <arg name="nice_val" default="-5"/>
+<arg name="port" default="/dev/hokuyo_lidar"/>
 
 
 <arg name="scan_topic" default="scan"/>
 <node name="hokuyo" pkg="hokuyo_node" type="hokuyo_node" output="screen" launch-prefix="nice -n $(arg nice_val)">
   <param name="calibrate_time" value="false" />
-  <param name="port" value="/dev/hokuyo_lidar" />
+  <param name="port" value="$(arg port)" />
   <remap from="scan" to="$(arg scan_topic)"/>
 </node>
 
