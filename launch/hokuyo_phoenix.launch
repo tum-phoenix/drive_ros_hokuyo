@@ -8,7 +8,7 @@
 
 
 <arg name="scan_topic" default="scan"/>
-<node name="hokuyo" pkg="hokuyo_node" type="hokuyo_node" output="screen" launch-prefix="nice -n $(arg nice_val)">
+<node name="hokuyo" pkg="drive_ros_hokuyo" type="hokuyo_node" output="screen" launch-prefix="nice -n $(arg nice_val)">
   <param name="calibrate_time" value="false" />
   <param name="port" value="$(arg port)" />
   <remap from="scan" to="$(arg scan_topic)"/>
