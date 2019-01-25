@@ -1,5 +1,5 @@
 <package>
-  <name>hokuyo_node</name>
+  <name>drive_ros_hokuyo</name>
   <version>1.7.8</version>
   <description>A ROS node to provide access to SCIP 2.0-compliant Hokuyo laser range finders (including 04LX).</description>
   <maintainer email="chadrockey@gmail.com">Chad Rockey</maintainer>

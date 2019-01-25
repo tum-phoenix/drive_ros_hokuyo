@@ -1,4 +1,4 @@
-#include <hokuyo_node/hokuyo.h>
+#include <drive_ros_hokuyo/hokuyo.h>
 #include <time.h>
 #include <sys/time.h> 
 #include <algorithm>

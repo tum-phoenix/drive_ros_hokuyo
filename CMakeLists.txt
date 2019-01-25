@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(hokuyo_node)
+project(drive_ros_hokuyo)
 
 find_package(Boost REQUIRED COMPONENTS system thread)
 

@@ -46,9 +46,9 @@
 
 #include "sensor_msgs/LaserScan.h"
 
-#include "hokuyo_node/HokuyoConfig.h"
+#include "drive_ros_hokuyo/HokuyoConfig.h"
 
-#include "hokuyo_node/hokuyo.h"
+#include "drive_ros_hokuyo/hokuyo.h"
 
 using namespace std;
 
@@ -83,8 +83,8 @@ class HokuyoDriver : public driver_base::Driver
   int corrupted_scan_count_;
 
 public:
-  hokuyo_node::HokuyoConfig config_;
-  typedef hokuyo_node::HokuyoConfig Config;
+  drive_ros_hokuyo::HokuyoConfig config_;
+  typedef drive_ros_hokuyo::HokuyoConfig Config;
 
   HokuyoDriver()
   {

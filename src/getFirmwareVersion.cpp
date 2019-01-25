@@ -32,7 +32,7 @@
 *  POSSIBILITY OF SUCH DAMAGE.
 *********************************************************************/
 
-#include "hokuyo_node/hokuyo.h"
+#include "drive_ros_hokuyo/hokuyo.h"
 #include <stdio.h>
 #include <ros/console.h>
 #include <log4cxx/logger.h>
