@@ -4,7 +4,7 @@
 <!-- define nice value of process (lower means higher priority) [-20;19] -->
 <!-- more infos: https://en.wikipedia.org/wiki/Nice_(Unix) -->
 <arg name="nice_val" default="-5"/>
-<arg name="port" default="/dev/hokuyo_lidar"/>
+<arg name="port" default="/dev/ttyACM0"/>
 
 
 <arg name="scan_topic" default="scan"/>
